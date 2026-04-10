@@ -1,0 +1,432 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A101 /* PulseRelayApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A001 /* PulseRelayApp.swift */; };
+		A102 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A002 /* ContentView.swift */; };
+		A103 /* Niche.swift in Sources */ = {isa = PBXBuildFile; fileRef = A003 /* Niche.swift */; };
+		A104 /* VelocityTrend.swift in Sources */ = {isa = PBXBuildFile; fileRef = A004 /* VelocityTrend.swift */; };
+		A105 /* NicheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A005 /* NicheManager.swift */; };
+		A106 /* PulseClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A006 /* PulseClient.swift */; };
+		A107 /* PulseFeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A007 /* PulseFeedViewModel.swift */; };
+		A108 /* PulseCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A008 /* PulseCardView.swift */; };
+		A109 /* PulseCardItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A009 /* PulseCardItemView.swift */; };
+		A110 /* NicheSelectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A010 /* NicheSelectorView.swift */; };
+		A111 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A011 /* SettingsView.swift */; };
+		A112 /* PulseBackgroundTaskManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A012 /* PulseBackgroundTaskManager.swift */; };
+		A113 /* mock_velocity_trends.json in Resources */ = {isa = PBXBuildFile; fileRef = A013 /* mock_velocity_trends.json */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A001 /* PulseRelayApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PulseRelayApp.swift; sourceTree = "<group>"; };
+		A002 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A003 /* Niche.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Niche.swift; sourceTree = "<group>"; };
+		A004 /* VelocityTrend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VelocityTrend.swift; sourceTree = "<group>"; };
+		A005 /* NicheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NicheManager.swift; sourceTree = "<group>"; };
+		A006 /* PulseClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PulseClient.swift; sourceTree = "<group>"; };
+		A007 /* PulseFeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PulseFeedViewModel.swift; sourceTree = "<group>"; };
+		A008 /* PulseCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PulseCardView.swift; sourceTree = "<group>"; };
+		A009 /* PulseCardItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PulseCardItemView.swift; sourceTree = "<group>"; };
+		A010 /* NicheSelectorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NicheSelectorView.swift; sourceTree = "<group>"; };
+		A011 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		A012 /* PulseBackgroundTaskManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PulseBackgroundTaskManager.swift; sourceTree = "<group>"; };
+		A013 /* mock_velocity_trends.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = mock_velocity_trends.json; sourceTree = "<group>"; };
+		A014 /* PulseRelay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PulseRelay.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A015 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A201 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A301 /* PulseRelay */ = {
+			isa = PBXGroup;
+			children = (
+				A001 /* PulseRelayApp.swift */,
+				A320 /* Views */,
+				A330 /* ViewModels */,
+				A340 /* Models */,
+				A350 /* Managers */,
+				A360 /* Networking */,
+				A370 /* BackgroundTasks */,
+				A380 /* Resources */,
+				A015 /* Info.plist */,
+			);
+			path = PulseRelay;
+			sourceTree = "<group>";
+		};
+		A302 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A014 /* PulseRelay.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A310 /* mainGroup */ = {
+			isa = PBXGroup;
+			children = (
+				A301 /* PulseRelay */,
+				A302 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A320 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A002 /* ContentView.swift */,
+				A008 /* PulseCardView.swift */,
+				A009 /* PulseCardItemView.swift */,
+				A010 /* NicheSelectorView.swift */,
+				A011 /* SettingsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A330 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				A007 /* PulseFeedViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		A340 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A003 /* Niche.swift */,
+				A004 /* VelocityTrend.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A350 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				A005 /* NicheManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		A360 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				A006 /* PulseClient.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		A370 /* BackgroundTasks */ = {
+			isa = PBXGroup;
+			children = (
+				A012 /* PulseBackgroundTaskManager.swift */,
+			);
+			path = BackgroundTasks;
+			sourceTree = "<group>";
+		};
+		A380 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A013 /* mock_velocity_trends.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A401 /* PulseRelay */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A501;
+			buildPhases = (
+				A601 /* Sources */,
+				A201 /* Frameworks */,
+				A701 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PulseRelay;
+			productName = PulseRelay;
+			productReference = A014 /* PulseRelay.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A800 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					A401 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+				};
+			};
+			buildConfigurationList = A802;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A310;
+			productRefGroup = A302 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A401 /* PulseRelay */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A701 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A113 /* mock_velocity_trends.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A601 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A101 /* PulseRelayApp.swift in Sources */,
+				A102 /* ContentView.swift in Sources */,
+				A103 /* Niche.swift in Sources */,
+				A104 /* VelocityTrend.swift in Sources */,
+				A105 /* NicheManager.swift in Sources */,
+				A106 /* PulseClient.swift in Sources */,
+				A107 /* PulseFeedViewModel.swift in Sources */,
+				A108 /* PulseCardView.swift in Sources */,
+				A109 /* PulseCardItemView.swift in Sources */,
+				A110 /* NicheSelectorView.swift in Sources */,
+				A111 /* SettingsView.swift in Sources */,
+				A112 /* PulseBackgroundTaskManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		A502 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = PulseRelay/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pulserelay.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A503 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = PulseRelay/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pulserelay.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A803 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A804 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A501 /* Build configuration list for PBXNativeTarget "PulseRelay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A502 /* Debug */,
+				A503 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A802 /* Build configuration list for PBXProject "PulseRelay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A803 /* Debug */,
+				A804 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+	};
+	rootObject = A800 /* Project object */;
+}
